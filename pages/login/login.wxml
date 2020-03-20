@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="main">
+<view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <van-cell-group>
+  <van-field
+    value="{{ username }}"
+    clearable
+    label="用户名"
+    placeholder="请输入用户名"
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="密码"
+    placeholder="请输入密码"
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>
+
+
+
+  </view>
+
+</view>
